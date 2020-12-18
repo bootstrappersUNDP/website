@@ -1,0 +1,137 @@
+<DOCTYPE!>
+<html>
+<head>
+    <title>Scientific productivity in Serbia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/d3.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> 
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+<body>
+
+
+
+       
+    <!-- navbar starts here -->
+        <div class="topnav" id="myTopnav">
+        <div class="topnav_mar">    
+            
+            
+            <div class="dropdown">
+                <button class="dropbtn">Migracije naučnika
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="naucna-pregled.html">Pregled</a>
+                  <a href="naucna-publikacije.html">Publikacije</a>
+                  <a href="naucna-saradnja.html">Naučna saradnja</a>
+                  <a href="naucna-metod.html">Metod</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Praćenje emigracije
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="migracije-pocetna.html">Pregled</a>
+                  <a href="migracije-podaci.html">Podaci</a>
+                  <a href="migracije-metod.html">Metod</a>
+                </div>
+            </div>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="pocetna.html">Početna</a>
+            <div class="lang">
+                <a href="science-publications.html">English</a>
+                <a href="naucna-publikacije.html">Srpski</a>
+                
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+   
+    <!-- navbar ends here -->
+
+    <!-- header starts here -->
+    <header>
+        <div class="page_title">
+            <h1>Produktivnost naučne zajednice u Srbiji</h1>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- page_content starts here -->
+    <section class="page_content">
+        <div class="container">
+            <div class="main_content">
+                <p>Više od polovine od 69.400 radova objavljenih u poslednjih dvadeset godina u Srbiji došlo je sa Univerziteta u Beogradu. Figura predstavlja trend objavljivanja radova na Univerzitetu u Beogradu, kao i najzastupljenije discipline. </p>
+
+                <div style="width: 100%; text-align: center">
+                <iframe title="Papers in Serbia" src="widgets/widget_papers.html" width=100% height=600px  frameBorder="0"></iframe>
+                </div>
+               
+                <p>Prosečna godišnja stopa rasta broja publikacija u poslednjih dvadeset godina bila je oko 15%. Iako je ovaj rast znatno veći od prosečne stope globalnog rasta za isti period (oko 4%), snažni rast u Srbiji prvenstveno je uzrokovan niskom polaznom tačkom. Ratovi, politička i ekonomska izolacija tokom devedesetih dramatično su smanjili naučnu produktivnost. Godine 2002, kompenzacija i merenje učinka istraživača vezani su za broj radova objavljenih u stranim časopisima, što je, zajedno sa ekonomskim oporavkom i širenjem online časopisa, dovelo do naglog povećanja stope objavljivanja. U periodu od 2012. godine nadalje došlo je do značajnog usporavanja rasta broja publikacija. Sama migracija ne može objasniti ovo usporavanje. Dalja analiza ovog trenda je izvan delokruga ove studije, ali problem ostaje i treba ga istražiti.</p>
+
+                <div style="width: 100%; text-align: center">
+                <iframe title="Publication trends" src="widgets/widget_growth.html" width=80% height=400px frameBorder="0"></iframe>
+                </div>
+
+                <p>Sledeće dve figure predstavljaju trendove objavljivanja radova u različitim disciplinama na UB i UNS. Kategorije su određene algoritmom Microsoft Academic. Uključili smo deset kategorija: devet najvećih i desetu, nazvanu „Ostalo“, koja uključuje sve discipline koje već nisu uključene u grafikon. Medicina (klinička medicina i biomedicinska istraživanja) i hemija su najveće i najbrže rastuće naučne oblasti u Srbiji. Broj objavljenih radova iz inženjerstva (izuzev računarstva) i matematike stagnira ili opada. </p>
+
+                <div style="width: 100%; text-align: center">
+                <iframe title="Publication trends BG" src="widgets/widget_BGpubs.html" width=70% height=500px frameBorder="0"></iframe>
+                
+                
+                <iframe title="Publication trends NS" src="widgets/widget_NSpubs.html" width=70% height=500px frameBorder="0"></iframe>
+                </div>
+            
+            <div class="main_content">
+                <p>Razlike u veličinama između naučnih oblasti nisu jedinstvene za Srbiju. Godišnje, biomedicinske nauke proizvedu desetak puta više publikacija od matematike. Priroda istraživanja u ovim naukama može objasniti različit broj radova. Biologija, fizika i biomedicinske nauke imaju najveći broj autora po radu, dok matematika ima najmanje.<a href="https://www.researchgate.net/profile/Jerrold_Grossman/publication/243769623_The_Evolution_of_the_Mathematical_Research_Collaboration_Graph/links/00b7d53b14c9548a18000000.pdf">Jedna studija</a> je našla da je 66% matematičkih radova napisano od strane jednog autora, dok u biomedicinskim naukama taj procenat iznosi 21%. Biomedicinska istraživanja često se sastoje od velikih grupa naučnika, dok teorijsko istraživanje prevashodno rade pojedinci. Štaviše, <a href="https://arxiv.org/ftp/math/papers/0410/0410574.pdf">neki autori</a> sugerišu da je jedan citat iz matematike jednak 5 sa citata iz inženjerstva, 19 citata iz fizike i 78 citata iz biologije. Autor te studije je, pogađate, matematičar. Bez obzira na razlike u veličinama disciplina, koje su očekivane, pad Inženjerstva i Matematike su zabrinjavajući i treba se pozabaviti njima. U nastavku možete da istražite relativnu veličinu naučnih disciplina na srpskim državnim univerzitetima.</p>
+            </div>
+
+            <div style="width: 100%; text-align: center">
+            <iframe title="Universities SRB" src="widgets/sankey_uni.html" width=70% height=500px frameBorder="0"></iframe>
+          </div>
+        </div>
+
+       
+    </section>
+    <!-- page_content ends here -->
+
+    <!-- footer starts here -->
+    <footer>
+        <div class="container_bottom">
+
+            <div class="footer_content item_left">
+                <div class="footer_item">
+                    <img class="item-1" src="images/UNDP-small.png" alt="UNDP logo">
+                    
+            </div>
+            <div>
+                    <p><i>Ova internet stranica je napravljena uz podršku United Nations Development Programme (UNDP) i UN Population Fund (UNFPA), u okviru izazova “Podacima do boljeg razumevanja procesa depopulacije”. Tim "Bootstrappers" je odgovoran za sadržaj ove stranice koja ne predstavlja stavove organizacija UNDP ili UNFPA.</i></p>
+            </div>
+            <div class="footer_item item_right">
+                    
+                    <img class="item-1" src="images/UNFPA.png" alt="UNFPA logo">
+            </div>
+           
+        </div>
+    </footer>
+    <!-- footer ends here -->
+    
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<DOCTYPE!>
+<html>
+<head>
+    <title>Method</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+       
+     <!-- navbar starts here -->
+        <div class="topnav" id="myTopnav">
+        <div class="topnav_mar">    
+            
+            
+            <div class="dropdown">
+                <button class="dropbtn">Scientific Migrants
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="science-overview.html">Overview</a>
+                  <a href="science-publications.html">Publications</a>
+                  <a href="science-collab.html">Collaborations</a>
+                  <a href="science-method.html">Method</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Measuring Emigration
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="emigration-overview.html">Overview</a>
+                  <a href="emigration-data.html">Emigration</a>
+                  <a href="emigration-method.html">Method</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <div class="lang">
+                <a href="science-method.html">English</a>
+                <a href="naucna-metod.html">Srpski</a>
+                
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+   
+    <!-- navbar ends here -->
+
+    <!-- header starts here -->
+    <header>
+        <div class="page_title">
+            <h1>Method</h1>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- page_content starts here -->
+    <section class="page_content">
+        <div class="container">
+            <div class="main_content">
+            
+                <p>A Serbian academic migrant is a person who authored a publication as a member of a Serbian institution but then published another in affiliation with a foreign institution. To identify as many scientists as possible, we adopt a loose definition of “publication” to include peer-reviewed papers, non-peer-reviewed papers, and conference proceedings. Despite the broad definition, the number of researchers is underestimated - it does not include Serbian students and early-stage researchers who left the country without publishing a paper or Serbian-born researchers who completed their education abroad and were never affiliated with a Serbian university. Another limitation of this approach has to do with the nature of research in different sciences. We are much more likely to identify academics in high-publishing fields, like biology, than those in low-publishing fields, such as philosophy or mathematics, just because there is a higher chance that the high-publishing author will be listed in the web libraries.</p>
+                <h3 class="h3">Data</h3>
+                <p>The data was collected through Microsoft Academic API - a web search engine for academic publications. By tracking individual authors over time, we were able to identify migrants, track their publishing records, and analyze their coauthors to determine how migration impacts the Serbian research industry. Microsoft Academic has eighteen attributes that can be used to search the database. Most important include paper title, paper ID, year of publication, citation count, authors’ names, IDs, affiliations, as well as attributes relating to journal and field of study. The author’s ID was a more reliable identifier than the author’s name. Relying on name proved to be technically challenging since different journals display different variations of the same name, especially with letters unique to the Serbian alphabet. The advances in machine learning techniques have not yet reached sufficient accuracy to look for scientists by name. Ideally, we should be able to identify Serbian researchers by name, regardless of their affiliation. The inadequacy of major research libraries and the national ambiguity of South Slavic names makes this approach technically intractable. For this reason, we define an academic more narrowly and focus only on those we can identify within the database.</p>
+                
+                <h3 class="h3">Results</h3>
+                <p>We found a total of 11,372 researchers with Serbian affiliation for the period from 2000 to 2020. Of that number, 977, or 8.6%, were identified as migrants. As one might expect, Serbian academics are emigrating to rich countries with strong educational and research institutions. Out of 977 who emigrated, we identified only 68 (7%) who coauthored a paper with a Serbian researcher back home. Investigating why 93% of academics do not publish with their former colleagues is beyond the scope of this study. We suggest conducting a survey to explore this problem further.  
+                    <br>
+                    <br>
+                The second research question of this project was to investigate whether academic migrants publish more than researchers in Serbia. When controlled for academic age, Serbian migrants annually publish 2.3 papers more than their Serbian counterparts. Based on this number alone, it might be inferred that the act of leaving the country increases the individual, and consequentially global research output. However, other factors might contribute to this difference. To identify these factors, we trained a random forest model. A random forest is a machine learning method that utilizes a collection of decision trees to classify random variables. One advantage of this model is that it can be used to rank the importance of variables. Variables with higher importance explain a larger percentage of variance in the data compared to the variables with low importance. </p>
+
+                <p><img style="width:80%;height:auto;" src="images/rf.png" alt="Results"></p>
+               
+                <p>The results indicate that the best predictor of scientific productivity is the quality of the research institution (measured by the average number of papers per person). This result is not surprising. Good research institutions have better access to research funds and facilities, along with a more extensive network of scientific collaborators. The Migration variable’s low importance indicates that the act of migrating does not lead to higher productivity unless a researcher “upgrades” to a more productive institution.
+                <br>
+                <br>
+                Finally, there is a statistically significant increase in the publishing record of domestic scientists who collaborate with foreign scientists. On average, more collaborative authors publish 1.9 papers per year more than less collaborative authors. There are two takeaways from these results. First, the loss of productivity of the Serbian academia caused by emigration could be partially offset by boosting international collaborations. Second, a researcher’s productivity is highly correlated with the productivity of the institution. Even modest improvements in the research environment, coupled with sincere efforts to improve collaborations, could lead to positive externalities for the entire research community.</p>
+          
+
+                <h3 class="h3">Recommendations</h3>
+                <br>
+           
+                The results suggest that scientific productivity is, among others, influenced by three factors: the quality of an institution, the size of emigration and the extent of international scientific collaborations. Institutionally, the rate of publishing from 2012 onwards is slowing down, and even declining in some disciplines. The first recommendation is to investigate the reasons behind this slowdown. Emigration is a country-wide problem, not specific to the scientific community. Out of these three factors, improving collaborations seem like the most realistic goal. To that end, we propose a survey that would analyze why only 7% of the Serbian migrants collaborated with their former colleagues, and how that number can be increased.  
+
+                <br>
+                <br>
+
+
+            </div>
+        </div>
+        <div style="height:100px"></div>
+    </section>
+    <!-- page_content ends here -->
+
+   <!-- footer starts here -->
+    <footer>
+        <div class="container_bottom">
+
+            <div class="footer_content item_left">
+                <div class="footer_item">
+                    <img class="item-1" src="images/UNDP-small.png" alt="UNDP logo">
+                    
+            </div>
+            <div>
+                    <p><i>This web site has been produced with the United Nations Development Programme (UNDP) and UN Population Fund (UNFPA) support, within the Depopulation Data Challenge Call. The contents of this site are the sole responsibility of the team Bootstrappers and do not necessarily reflect the views of UNDP, nor UNFPA.</i></p>
+            </div>
+            <div class="footer_item item_right">
+                    
+                    <img class="item-1" src="images/UNFPA.png" alt="UNFPA logo">
+            </div>
+           
+        </div>
+    </footer>
+    <!-- footer ends here -->
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    
+</body>
+</html>

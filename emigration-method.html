@@ -1,0 +1,124 @@
+<DOCTYPE!>
+<html>
+<head>
+    <title>Measuring Depopulation - Method</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+       
+     <!-- navbar starts here -->
+        <div class="topnav" id="myTopnav">
+        <div class="topnav_mar">    
+            
+            
+            <div class="dropdown">
+                <button class="dropbtn">Scientific Migrants
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="science-overview.html">Overview</a>
+                  <a href="science-publications.html">Publications</a>
+                  <a href="science-collab.html">Collaborations</a>
+                  <a href="science-method.html">Method</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Measuring Emigration
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="emigration-overview.html">Overview</a>
+                  <a href="emigration-data.html">Emigration</a>
+                  <a href="emigration-method.html">Method</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <div class="lang">
+                <a href="emigration-method.html">English</a>
+                <a href="migracije-metod.html">Srpski</a>
+                
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+   
+    <!-- navbar ends here -->
+
+     <!-- header starts here -->
+    <header>
+        <div class="page_title">
+            <h1>Method</h1>
+        </div>
+    </header>
+    <!-- header ends here -->
+  
+
+    <!-- page_content starts here -->
+    <section class="page_content">
+        <div class="container">
+            <div class="main_content">
+                <p>The method includes collecting data from Facebook API and calibrating the data based on the official statistics. Although both the method and the data have certain limitations, they can give a very detailed insight into emigration trends over time. In fact, the main advantage of the presented methodology is not the ability to estimate the absolute numbers of migrants in individual countries but to follow the migration numbers' changes over time and give insights about the countries where the traditional demographic data is either not collected or of poor quality. </p>
+
+                <p><img style="width:60%;height:auto;" src="images/Map_data.png" alt="Data"></p>
+                <h3 class="h3">Data</h3>
+
+                <p>Users of social media platforms are not representative of society at large. This is particularly true for age, where the distribution of social network users skews to younger age groups. About 45% of Serbia’s residents use one of the Facebook technologies. Facebook data is skewed toward younger generations, with the most users aged 25-34. Since the minimum age requirement for a Facebook account is 13, the data reports no users below this age. 
+
+                Data from the official sources was used to validate the Facebook estimates and to develop the model. We used multiple sources to assemble the dataset on the number of Serbian migrants and their demographic characteristics. For countries in the European Union, migrant data (foreign-born migrant dataset) is available through Eurostat (but not for Germany, France, the UK, Spain, or Netherlands). Statistics for the number of Serbian migrants in the United States were collected through the American Community Survey. For the other countries, we used the United Nations' Department of Economic and Social Affairs (UNDESA) data and the UN Demographic Statistics Database.          
+                </p>
+                <h3 class="h3">Regression Model</h3>
+                <p> Although Facebook numbers differ from the official sources, the numbers are highly correlated, with an extremely high correlation coefficient of 0.977. To correct the age bias in the data in a more systematic way, and account for the different Facebook usage patterns in different countries, we estimated the parameters of the following linear regression model:
+                </p>
+
+                <p><img style="width:80%;height:auto;" src="images/eq.png" alt="Equation"></p>
+                
+                <p> The regression coefficients indicate that Facebook data underestimate the number of migrants in older age groups. Additionally, the magnitude of coefficient β2 suggests that the model is sensitive to the Facebook penetration rate. This means that in countries with high Facebook usage, the calculated number of migrants will be similar to the raw Facebook data. There will be no significant correction since everyone is already on Facebook. Conversely, in countries with a low usage rate, the projected number of migrants will be several times larger than the raw data to account for people not on Facebook. 
+
+                <h3 class="h3">Conclusions</h3>
+                <p> The results indicate that Facebook is a good source of migration and demographic data. For the Serbian context and Balkan countries, this type of analysis could be of great assistance since countries in the region exhibit high out-migration on the annual level, which is impossible to measure with decennial censuses. An inexpensive and quick data collection process allows us to repeat the analysis every couple of months, giving a very detailed insight into emigration trends over time. In fact, the main advantage of the presented methodology is not the ability to estimate the absolute numbers of migrants in individual countries but to follow the migration numbers' changes over time. More broadly, social networks could be used to investigate migration phenomena related to wars, economic hardship, or political instability. This project is only the first step on our path to analyze the migration patterns of Serbian migrants as Europe gradually opens in the post-COVID environment. </p>
+
+
+            </div>
+        </div>
+        <div style="height:100px"></div>
+    </section>
+    <!-- page_content ends here -->
+
+    <!-- footer starts here -->
+    <footer>
+        <div class="container_bottom">
+
+            <div class="footer_content item_left">
+                <div class="footer_item">
+                    <img class="item-1" src="images/UNDP-small.png" alt="UNDP logo">
+                    
+            </div>
+            <div>
+                    <p><i>This web site has been produced with the United Nations Development Programme (UNDP) and UN Population Fund (UNFPA) support, within the Depopulation Data Challenge Call. The contents of this site are the sole responsibility of the team Bootstrappers and do not necessarily reflect the views of UNDP, nor UNFPA.</i></p>
+            </div>
+            <div class="footer_item item_right">
+                    
+                    <img class="item-1" src="images/UNFPA.png" alt="UNFPA logo">
+            </div>
+           
+        </div>
+    </footer>
+    <!-- footer ends here -->
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    
+</body>
+</html>

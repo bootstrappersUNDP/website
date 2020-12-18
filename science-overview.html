@@ -1,0 +1,192 @@
+<DOCTYPE!>
+<html>
+<head>
+    <title>Serbian Academics Abroad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<style>
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.cont {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  float:center;
+  margin-bottom: 50px;
+  margin-left: auto;
+    margin-right: auto;
+}
+</style>
+       
+   <!-- navbar starts here -->
+        <div class="topnav" id="myTopnav">
+        <div class="topnav_mar">    
+            
+            
+            <div class="dropdown">
+                <button class="dropbtn">Scientific Migrants
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="science-overview.html">Overview</a>
+                  <a href="science-publications.html">Publications</a>
+                  <a href="science-collab.html">Collaborations</a>
+                  <a href="science-method.html">Method</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Measuring Emigration
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="emigration-overview.html">Overview</a>
+                  <a href="emigration-data.html">Emigration</a>
+                  <a href="emigration-method.html">Method</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <div class="lang">
+                <a href="science-overview.html">English</a>
+                <a href="naucna-pregled.html">Srpski</a>
+                
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+   
+    <!-- navbar ends here -->
+
+     <!-- header starts here -->
+    <header>
+        <div class="page_title">
+            <h1>Emigration of Serbian Scientists</h1>
+        </div>
+    </header>
+    <!-- header ends here -->
+   
+
+    <!-- page_content starts here -->
+    <section class="page_content">
+        <div class="container">
+            <div class="main_content">
+                <p>Emigration of Serbian scientists translates into a considerable cost for the country. The material cost of education is compounded by the lost opportunity and reduction in scientific productivity. This project investigates how migration and international collaboration impact the productivity of the Serbian academic community.
+
+                Read more about the <a href="science-method.html">methodology and data</a>, investigate <a href="science-publications.html">publication trends</a> in Serbia, find out how <a href="science-collab.html">scientific collaboration</a> impacts scientific productivity, or explore the Serbian scientific community around the world in the map below.
+            </p>
+            </div>
+            <div class="content_wrapper">
+                <div class="content_box big_box">
+
+                    <iframe src="widgets/widget_map.html" title="Migration" width=80% height=550px></iframe>
+                </div>
+            </div>
+            <div class="main_content">
+                <p>Data for this project was collected through <a href="https://academic.microsoft.com/home">Microsoft Academic</a> - a web search engine for academic publications. More than 200 million papers were queried to identify Serbian academics. <b><i>"Serbian academic"</i></b> is a person who published at least one scientific paper, and who is affiliated with one of the five largest Serbian public universities: University of Belgrade, University of Novi Sad, University of Niš, University of Kragujevac, and State University of Novi Pazar. <b><i>"Serbian academic migrant"</i></b> is a person who authored a publication as a member of a Serbian institution but then published another in affiliation with a foreign institution. This method of identification underestimates the number of researchers - it does not identify Serbian students and early-stage researchers who left the country without publishing a paper or Serbian-born researchers who completed their education abroad and were never affiliated with a Serbian university. Nevertheless, the method is effective for estimating migration trends. Finally, a <b><i>"collaboration"</i></b> is a co-authorship between a domestic and foreign academic. </p>
+                    
+                <h3 class="h3">Key Findings</h3>
+                <p>We identified a total of 11,372 researchers with Serbian affiliation for the period from 2000 to 2020. Of that number, 977, or 8.6%, were identified as migrants. In addition, 93% of migrants did not publish a paper with a Serbian author after leaving the country. suggesting that communication between a migrant and Serbian scientific community ends once a migrant leaves the country.
+
+
+                  <br>
+                  <br>
+                We found a statistically significant difference in output between researchers at the Serbian public universities and Serbian academic migrants. On average, a migrant will publish 2.3 papers more per year than their Serbian counterpart. In addition, there is a statistically significant increase in the publishing record of domestic scientists who collaborate with foreign scientists. On average, more collaborative authors publish 1.9 papers per year more than less collaborative authors. 
+                  <br>
+                  <br>
+
+                Additionally, there are several concerning trends. First, the number of scientific papers published annually in Serbia has had very modest growth in the last 8 years and has even decreased in 2017 and 2018. Second, the productivity of physics, engineering and, mathematics is continuously declining, which has a negative effect on the young researchers entering the field. Third, year-by-year numbers in some disciplines erratically fluctuate, suggesting a lack of stability and continuity of funding.
+                  <br>
+                  <br>
+
+      
+
+
+                  
+            </div>
+        </div>
+    
+    <div style="width: 50%; margin-right: auto; margin-left: auto">
+    <h3 style="text-align: center; ">Are you a Serbian academic living abroad? You don't see your university on the map? Send us a message and we'll fix that!</h3></div>
+        <div class="cont">
+          <!-- <form action="/action_page.php"> -->
+            
+            <label for="uni">Your University</label>
+            <input type="text" id="uni" name="uni" placeholder="Name of Your University..">
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Country..">
+
+            <label for="subject">Comment</label>
+            <textarea id="subject" name="subject" placeholder="Comment is optional.." style="height:100px"></textarea>
+
+            <input type="submit" value="Submit">
+         <!-- </form> -->
+        </div>
+
+    </section>
+    <!-- page_content ends here -->
+
+    <!-- footer starts here -->
+    <footer>
+        <div class="container_bottom">
+
+            <div class="footer_content item_left">
+                <div class="footer_item">
+                    <img class="item-1" src="images/UNDP-small.png" alt="UNDP logo">
+                    
+            </div>
+            <div>
+                    <p><i>This web site has been produced with the United Nations Development Programme (UNDP) and UN Population Fund (UNFPA) support, within the Depopulation Data Challenge Call. The contents of this site are the sole responsibility of the team Bootstrappers and do not necessarily reflect the views of UNDP, nor UNFPA.</i></p>
+            </div>
+            <div class="footer_item item_right">
+                    
+                    <img class="item-1" src="images/UNFPA.png" alt="UNFPA logo">
+            </div>
+           
+        </div>
+    </footer>
+    <!-- footer ends here -->
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    
+</body>
+</html>
